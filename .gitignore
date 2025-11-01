@@ -86,8 +86,12 @@ fabric.properties
 
 .idea/
 
+.mvn/wrapper/
 !.idea/codeStyles
 !.idea/runConfigurations
+.mvnw
+*.cmd
+
 
 ### Java ###
 # Compiled class file
