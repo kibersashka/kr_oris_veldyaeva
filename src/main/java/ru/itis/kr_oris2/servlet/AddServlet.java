@@ -13,9 +13,11 @@ import java.io.IOException;
 @WebServlet("/add")
 public class AddServlet extends HttpServlet {
     private TrainService trainService = new TrainService();
+
     public  void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("/add.ftl").forward(req,resp);
     }
+
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Train train = new Train();
 
